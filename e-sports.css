@@ -1,0 +1,246 @@
+/* Fan club form styles */
+.fan-form, .signup-form {
+    background: #fff8e1;
+    border-left: 8px solid var(--color-green);
+    border-radius: 0.5rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.fan-form h2, .signup-form h2 {
+    color: var(--color-red);
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.fan-form form, .signup-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.fan-form label, .signup-form label {
+    font-weight: 500;
+    color: var(--color-black);
+    margin-bottom: 0.2em;
+}
+
+.fan-form input[type="text"],
+.fan-form input[type="email"],
+.fan-form select,
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form select {
+    padding: 0.6em 0.8em;
+    border: 2px solid var(--color-green);
+    border-radius: 0.3em;
+    font-size: 1em;
+    font-family: var(--font-main);
+    background: #fff;
+    color: var(--color-black);
+    margin-bottom: 0.5em;
+    transition: border-color 0.2s;
+}
+
+.fan-form input:focus,
+.fan-form select:focus,
+.signup-form input:focus,
+.signup-form select:focus {
+    border-color: var(--color-red);
+    outline: none;
+}
+
+.fan-form input[type="checkbox"],
+.signup-form input[type="checkbox"] {
+    accent-color: var(--color-green);
+    margin-right: 0.5em;
+}
+
+.fan-form button,
+.signup-form button {
+    background: var(--color-red);
+    color: #fff;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.7em 1.2em;
+    font-size: 1.1em;
+    font-family: var(--font-main);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5em;
+    transition: background 0.2s;
+}
+
+.fan-form button:hover,
+.signup-form button:hover {
+    background: var(--color-green);
+}
+/* Club badge grid styles */
+.club-badges {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+    .club-badges {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .club-badges {
+        grid-template-columns: 1fr;
+    }
+}
+
+.club-badges figure {
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
+    border: 3px solid var(--color-yellow);
+    padding: 1em 1.5em 1em 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.club-badges figure:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    border-color: var(--color-red);
+}
+
+.club-badges img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 0.5em;
+    background: #f7f7f7;
+    margin-bottom: 0.5em;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.club-badges figcaption {
+    color: var(--color-red);
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.5em;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px #ffd10044;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+
+/* Global CSS Variables: Ghana flag colors */
+:root {
+    --color-red: #ef3340;
+    --color-yellow: #ffd100;
+    --color-green: #009739;
+    --color-black: #000;
+    --color-bg: var(--color-yellow);
+    --color-text: var(--color-black);
+    --font-main: 'Oswald', Arial, sans-serif;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--color-red);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background: var(--color-green);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    font-family: var(--font-main);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+section {
+    background: #fff8e1;
+    border-left: 8px solid var(--color-green);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    background: var(--color-red);
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+    background: var(--color-green);
+    color: #fff;
+}
+
+/* Hero image styles */
+figure {
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    position: relative;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: var(--color-yellow);
+    font-size: 1.1em;
+    margin-top: 0.5em;
+}
