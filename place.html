@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-big.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Discover Accra</h1>
+    </header>
+    <main>
+        <section>
+            <figure>
+                <picture>
+                    <source srcset="images/accra-hero.webp" media="(min-width: 800px)" type="image/webp">
+                    <source srcset="images/accra-small.jpg" media="(max-width: 799px)" type="image/jpeg">
+                    <img src="images/accra-ghana.jpg" alt="A beautiful view of Accra, Ghana"
+                        style="width:100%;height:auto;">
+                </picture>
+                <figcaption>Map of Africa</figcaption>
+            </figure>
+        </section>
+        <section class="info">
+            <h2>About Accra</h2>
+            <p>Area :~225.67 km² (urban area); ~900 km² (metro area)</p>
+            <p>Population :~2.27 million (2021)</p>
+            <p>Density :~10,000/km² (urban area); ~2,500/km² (metro area)</p>
+            <p>Time Zone :GMT (UTC+0)</p>
+            <p>Elevation :~61 m (200 ft)</p>
+            <p>Climate :Tropical savanna climate (Aw)</p>
+            <p>Founded :15th century</p>
+            <p>Mayor :Mohammed Adjei Sowah</p>
+            <p>Nicknames :Accra, Ga City</p>
+            <p>Known for :Cultural diversity, historical sites, vibrant markets, beaches</p>
+        </section>
+        <section class="weather">
+            <h2>Current Weather in Accra</h2>
+            <p>temperature:28-29°C</p>
+            <p>seasons:Rainy and Dry</p>
+            <p>wind speed: 26km/h</p>
+            <p>conditions:Light rain or drizzle expected , with 69-89% chance of precipitation</p>
+            <p>Windchill: <span id="windchill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> 🥥 Edward Brefo 🥥 Accra,Ghana </p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

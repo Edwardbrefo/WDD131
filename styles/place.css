@@ -1,0 +1,76 @@
+/* Global CSS Variables: Ghana flag colors */
+:root {
+    --color-red: #ef3340;
+    --color-yellow: #ffd100;
+    --color-green: #009739;
+    --color-black: #000;
+    --color-bg: var(--color-yellow);
+    --color-text: var(--color-black);
+    --font-main: 'oswald', Arial, sans-serif;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--color-red);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background: var(--color-green);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    font-family: var(--font-main);
+}
+
+.info {
+    background: #fff8e1;
+    border-left: 8px solid var(--color-green);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.weather {
+    background: #fff8e1;
+    border-left: 8px solid var(--color-red);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.weather h2 {
+    display: inline-block;
+    position: relative;
+}
+
+/* Hide pseudo weather icon by default, show in large view */
+.weather h2::after {
+    content: '';
+    margin-left: 0.5em;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: medium;
+}
