@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="96" viewBox="0 0 420 96">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#CC0000"/>
+      <stop offset="1" stop-color="#C9B037"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="96" rx="12" fill="#fff"/>
+  <g transform="translate(18,12)">
+    <circle cx="36" cy="36" r="36" fill="#CC0000"/>
+    <g transform="translate(14,10)">
+      <circle cx="22" cy="22" r="14" fill="#C9B037"/>
+      <polygon points="22,8 24.8,18 36,18 26.6,23.5 29.2,34 22,27.5 14.8,34 17.4,23.5 8,18 19.2,18" fill="#111111"/>
+    </g>
+  </g>
+  <text x="96" y="48" font-family="Oswald, Arial, sans-serif" font-size="32" fill="#111">Club Pulse</text>
+  <text x="96" y="70" font-family="Inter, Arial, sans-serif" font-size="12" fill="#555">Ghana — For the love of the game</text>
+</svg>

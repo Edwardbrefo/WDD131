@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Ghana-inspired favicon: gold background, red disc, black star -->
+  <rect width="64" height="64" rx="10" fill="#CC0000"/>
+  <circle cx="32" cy="32" r="20" fill="#C9B037"/>
+  <!-- small black star centered -->
+  <polygon points="32,18 35.2,26 44,26 36.6,30.6 39.2,38 32,33.6 24.8,38 27.4,30.6 20,26 28.8,26" fill="#111111"/>
+</svg>
