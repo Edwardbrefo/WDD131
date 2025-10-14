@@ -1,4 +1,4 @@
-/* Fan club form styles */
+
 .fan-form,
 .signup-form {
     background: #fff8e1;
@@ -82,7 +82,7 @@
     background: var(--color-green);
 }
 
-/* Club badge grid styles */
+
 .club-badges {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -144,9 +144,8 @@
     text-shadow: 0 1px 2px #ffd10044;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
 
-/* Global CSS Variables: Ghana flag colors */
+
 :root {
     --color-red: #ef3340;
     --color-yellow: #ffd100;
@@ -155,6 +154,7 @@
     --color-bg: var(--color-yellow);
     --color-text: var(--color-black);
     --font-main: 'Oswald', Arial, sans-serif;
+    
 }
 
 body {
