@@ -38,7 +38,7 @@ label {
     margin-bottom: 0.5rem;
 }
 input[type="text"],
-input[type="dateInstall"],
+input[type="date"],
 select,
 textarea {
     width: 100%;
