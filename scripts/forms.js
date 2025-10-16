@@ -31,7 +31,7 @@ const products = [
   }
 ];
 
-const productSelect = document.getElementById("products");
+const productSelect = document.getElementById("productSelect");
 products.forEach(product => {
     const option = document.createElement("option");
     option.value = product.id;
@@ -58,4 +58,6 @@ let reviewCount = localStorage.getItem("reviewCount") || 0;
 reviewCount++;
 localStorage.setItem("reviewCount", reviewCount);
 const reviewCountDisplay = document.getElementById("reviewCount");
+if (reviewCountDisplay) {
 reviewCountDisplay.textContent = `You have submitted ${reviewCount} reviews.`;
+}
